@@ -6,7 +6,7 @@
         public float Horizontal => _horizontal;
         private float _vertical;
         public float Vertical => _vertical;
-        private bool _enabled;
+        private bool _enabled = true;
         public bool Enabled => _enabled;
 
         public void SetInput(float horizontal, float vertical)
