@@ -11,6 +11,13 @@
 
         public void SetInput(float horizontal, float vertical)
         {
+            if (!_enabled)
+            {
+                _horizontal = 0;
+                _vertical = 0;
+                return;
+            }
+            
             _horizontal = horizontal;
             _vertical = vertical;
         }
