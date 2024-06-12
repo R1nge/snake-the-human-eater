@@ -12,13 +12,15 @@ namespace _Assets.Scripts.CompositionRoot
     {
         protected override void Configure(IContainerBuilder builder)
         {
+            builder.Register<EnemyFactory>(Lifetime.Singleton);
+
             builder.Register<InputService>(Lifetime.Singleton);
             builder.Register<PlayerFactory>(Lifetime.Singleton);
-            
+
             builder.Register<UIStatesFactory>(Lifetime.Singleton);
             builder.Register<UIStateMachine>(Lifetime.Singleton);
             builder.Register<UIFactory>(Lifetime.Singleton);
-            
+
             builder.Register<GameStatesFactory>(Lifetime.Singleton);
             builder.Register<GameStateMachine>(Lifetime.Singleton);
         }

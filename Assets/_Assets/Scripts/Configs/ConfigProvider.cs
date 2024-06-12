@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _Assets.Scripts.Gameplay;
+using UnityEngine;
 
 namespace _Assets.Scripts.Configs
 {
@@ -7,8 +8,10 @@ namespace _Assets.Scripts.Configs
         [SerializeField] private UIConfig uiConfig;
         [SerializeField] private GameConfig gameConfig;
         [SerializeField] private PlayerConfig playerConfig;
+        [SerializeField] private EnemyController enemyController;
         public UIConfig UIConfig => uiConfig;
         public GameConfig GameConfig => gameConfig;
         public PlayerConfig PlayerConfig => playerConfig;
+        public EnemyController EnemyController => enemyController;
     }
 }
