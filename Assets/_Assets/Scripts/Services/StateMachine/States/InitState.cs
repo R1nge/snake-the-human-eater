@@ -21,6 +21,7 @@ namespace _Assets.Scripts.Services.StateMachine.States
         {
             await _uiStateMachine.SwitchState(UIStateType.Loading);
             await _yandexService.Init();
+            await _stateMachine.SwitchState(GameStateType.Game);
         }
 
         public async UniTask Exit()
