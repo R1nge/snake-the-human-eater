@@ -1,4 +1,5 @@
-﻿using _Assets.Scripts.Services.Gameplay;
+﻿using _Assets.Scripts.Configs;
+using _Assets.Scripts.Services.Gameplay;
 using UnityEngine;
 using VContainer;
 
@@ -7,6 +8,7 @@ namespace _Assets.Scripts.Gameplay
     public class PlayerController : MonoBehaviour
     {
         [Inject] private InputService _inputService;
+        [Inject] private ConfigProvider _configProvider;
         private PlayerMovement _playerMovement;
         private BoundariesController _boundariesController;
 
@@ -18,7 +20,7 @@ namespace _Assets.Scripts.Gameplay
 
         private void Update()
         {
-            _playerMovement.Move();
+            _playerMovement.Move(_configProvider.PlayerConfig.Speed);
             _boundariesController.Update();
         }
     }

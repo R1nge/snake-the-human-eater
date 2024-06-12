@@ -15,10 +15,10 @@ namespace _Assets.Scripts.Gameplay
             _inputService = inputService;
             _delta = delta;
         }
-        
-        public void Move()
+
+        public void Move(float speed)
         {
-            _transform.position += new Vector3(_inputService.Horizontal, _inputService.Vertical) * _delta;
+            _transform.position += new Vector3(_inputService.Horizontal, _inputService.Vertical) * (_delta * speed);
         }
     }
 }

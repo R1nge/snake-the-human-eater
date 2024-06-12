@@ -64,3 +64,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiConfig: {fileID: 11400000, guid: c01c0ec4a5855f641b051cf97763b193, type: 2}
   gameConfig: {fileID: 11400000, guid: 6b5538528a710e04ea96e138a5e9481b, type: 2}
+  playerConfig: {fileID: 11400000, guid: adc4e42d7497a9d438f39e8d2d863745, type: 2}

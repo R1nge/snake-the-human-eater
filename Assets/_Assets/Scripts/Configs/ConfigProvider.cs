@@ -6,7 +6,9 @@ namespace _Assets.Scripts.Configs
     {
         [SerializeField] private UIConfig uiConfig;
         [SerializeField] private GameConfig gameConfig;
+        [SerializeField] private PlayerConfig playerConfig;
         public UIConfig UIConfig => uiConfig;
         public GameConfig GameConfig => gameConfig;
+        public PlayerConfig PlayerConfig => playerConfig;
     }
 }

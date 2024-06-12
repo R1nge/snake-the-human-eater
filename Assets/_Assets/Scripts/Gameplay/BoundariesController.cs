@@ -21,7 +21,6 @@ namespace _Assets.Scripts.Gameplay
             {
                 viewportPosition.x = viewportPosition.x > 1 ? 0 : viewportPosition.x < 0 ? 1 : viewportPosition.x;
                 viewportPosition.y = viewportPosition.y > 1 ? 0 : viewportPosition.y < 0 ? 1 : viewportPosition.y;
-                
                 _playerTransform.position = _camera.ViewportToWorldPoint(viewportPosition);
             }
         }
