@@ -18,8 +18,8 @@ namespace _Assets.Scripts.Gameplay
 
         public void Move(float moveSpeed, float rotationSpeed)
         {
-            _transform.position += _transform.right * (Time.deltaTime * moveSpeed);
-            var rotation = _inputService.Horizontal * (Time.deltaTime * rotationSpeed);
+            _transform.position += _transform.right * (_delta * moveSpeed);
+            var rotation = _inputService.Horizontal * (_delta * rotationSpeed);
             _transform.Rotate(0, 0, rotation);
         }
     }
