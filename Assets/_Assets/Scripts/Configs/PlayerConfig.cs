@@ -6,6 +6,8 @@ namespace _Assets.Scripts.Configs
     public class PlayerConfig : ScriptableObject
     {
         [SerializeField] private float speed;
+        [SerializeField] private float rotationSpeed;
         public float Speed => speed;
+        public float RotationSpeed => rotationSpeed;
     }
 }

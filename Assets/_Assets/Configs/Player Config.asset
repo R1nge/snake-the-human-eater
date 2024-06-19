@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Player Config
   m_EditorClassIdentifier: 
   speed: 10
+  rotationSpeed: 360

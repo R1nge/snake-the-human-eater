@@ -20,7 +20,7 @@ namespace _Assets.Scripts.Gameplay
 
         private void Update()
         {
-            _playerMovement.Move(_configProvider.PlayerConfig.Speed);
+            _playerMovement.Move(_configProvider.PlayerConfig.Speed, _configProvider.PlayerConfig.RotationSpeed);
             _boundariesController.Update();
         }
     }

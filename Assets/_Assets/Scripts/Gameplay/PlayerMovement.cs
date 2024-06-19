@@ -16,9 +16,11 @@ namespace _Assets.Scripts.Gameplay
             _delta = delta;
         }
 
-        public void Move(float speed)
+        public void Move(float moveSpeed, float rotationSpeed)
         {
-            _transform.position += new Vector3(_inputService.Horizontal, _inputService.Vertical) * (_delta * speed);
+            _transform.position += _transform.right * (Time.deltaTime * moveSpeed);
+            var rotation = _inputService.Horizontal * (Time.deltaTime * rotationSpeed);
+            _transform.Rotate(0, 0, rotation);
         }
     }
 }
